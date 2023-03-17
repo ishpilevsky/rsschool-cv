@@ -203,13 +203,13 @@ p span {
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
-    filter: brightness(90%) contrast(90%);
+    filter: brightness(90%) contrast(60%);
     transition: .3s;
     image-rendering: pixelated;
 }
 
 .section-profile-logo:hover {
-    filter: saturate(150%) brightness(110%) contrast(110%);
+    filter: saturate(110%) brightness(100%) contrast(100%);
     box-shadow: none;
 }
 
@@ -238,11 +238,12 @@ p span {
 
 
 .contacts-item:nth-child(1)::before {
+    top: 5px;
     background-image: url("./Icon/location.svg");
 }
 
 .contacts-item:nth-child(2)::before {
-    top: 1px;
+    top: 5px;
     left: 1px;
     width: 15px;
     height: 15px;
@@ -250,7 +251,7 @@ p span {
 }
 
 .contacts-item:nth-child(3)::before {
-    top: 1px;
+    top: 5px;
     left: 1px;
     width: 15px;
     height: 15px;
@@ -258,7 +259,7 @@ p span {
 }
 
 .contacts-item:nth-child(4)::before {
-    top: 1px;
+    top: 5px;
     left: 1px;
     width: 15px;
     height: 15px;
@@ -266,7 +267,7 @@ p span {
 }
 
 .contacts-item:nth-child(5)::before {
-    top: 1px;
+    top: 5px;
     left: 1px;
     width: 15px;
     height: 15px;
