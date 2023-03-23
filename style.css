@@ -172,7 +172,6 @@ ul {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    /* width: 1222px; */
     margin: 93px 109px;
 }
 
@@ -185,7 +184,6 @@ ul {
 .text-about {
     display: flex;
     flex-wrap: wrap;
-    /* max-width: 605px; */
 }
 
 .third {
@@ -267,7 +265,6 @@ ul {
 }
 
 .services {
-    /* width: 1222px; */
     margin: 0px 109px 121px 108px;
     padding: 0;
     display: flex;
@@ -336,17 +333,14 @@ ul {
 }
 
 .price-container {
-    /* max-width: 1222px; */
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    /* align-items: center; */
     align-content: center;
     margin: 40px 109px 115px 109px;
 }
 
 .prices {
-    /* max-width: 332px; */
     display: flex;
     flex-wrap: wrap;
     margin-right: 438px;
@@ -413,7 +407,6 @@ ul {
 }
 
 .text-callus {
-    /* max-width: 452px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -482,19 +475,15 @@ ul {
 .contactsus-container img {
     width: 400px;
     height: 496px;
-    /* margin-right: 113px; */
 }
 
 .contactsus-container h2{
-    /* font-family: 'Inika';
-    font-style: normal; */
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
     color: #499A18;
     margin: 0;
     margin-top: 26px;
-    /* margin-right: 89px; */
 }
 
 .btncontacts {
@@ -527,8 +516,6 @@ ul {
     background-image: url(./Images/svg/accordion_btn_contacts.svg);
     background-repeat: no-repeat;
     background-position: center;
-    /* padding: 0; */
-    /* padding: 17px 39px 17px 339px; */
     width: 18px;
     height: 18px;
     left: 399px;
@@ -538,8 +525,6 @@ ul {
 
 /* footer */
 .footer-container {
-    /* width: 1222px; */
-    /* height: 50px; */
     margin: 40px 109px;
     display: flex;
     flex-wrap: nowrap;
@@ -553,13 +538,11 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    /* margin-left: 20px; */
     width: 182px;
 }
 
 .left div {
     font-family: 'Inter';
-    /* font-style: normal; */
     font-weight: 400;
     font-size: 20px;
     line-height: 50px;
@@ -575,7 +558,6 @@ ul {
 
 .center div {
     font-family: 'Inter';
-    /* font-style: normal; */
     font-weight: 400;
     font-size: 20px;
     line-height: 50px;
