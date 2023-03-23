@@ -1,0 +1,612 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inika';
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    max-width: 1444px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Start Header css */
+.header {
+    background-color: #EDF2EC;
+}
+
+.header-container {
+    margin: auto;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1220px;
+    padding: 42px 0 42px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-pic {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header-link, .nav-link {
+    text-decoration: none;
+    color: #010201;
+}
+
+.nav-link.spl-link {
+    color: #E06733;
+}
+
+.nav-link:hover {
+    opacity: 0.75;
+}
+
+.nav-link:active {
+    color: #E06733;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    color: #010201;
+}
+
+.nav-item {
+    margin-right: 46px;
+    list-style: none;
+    top: 42px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+/* End Header css */
+
+
+
+/* Start main css */
+.section-home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;                
+    background-color: #EDF2EC;
+}
+
+.leaf-home {
+    width: 449px;
+    height: 412px;
+    margin-right: 224px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 1223px;
+    margin: 62px 109px 62px 109px;
+}
+
+.text-home {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 550px;
+}
+
+.first {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+    margin: 0;
+    margin-bottom: 42px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.first span {
+    color: #499A18;
+}
+
+.second {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+    margin: 0;
+    margin-bottom: 62px;
+}
+
+.btn1 {
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    background: none;
+    border: 2px solid rgba(224, 103, 51, 1);
+    border-radius: 10px;
+    padding: 14px 28px;
+}
+
+/* section-about */
+
+.section-about {
+    background-color: #FFFFFF;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1222px;
+    margin: 93px 109px;
+}
+
+.houseplant {
+    width: 464px;
+    height: 479px;
+    margin-left: 153px;
+}
+
+.text-about {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 605px;
+}
+
+.third {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: rgba(73, 154, 24, 1);
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 463px;
+}
+
+.third span {
+    color: rgba(224, 103, 51, 1);
+}
+
+.fourth {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+    margin: 0;
+}
+
+/* service-section */
+.service-container {
+    background-color: rgba(237, 242, 236, 1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.services-container {
+    max-width: 1007px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 40px 324px 90px 109px;
+}
+
+.fifth {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    max-width: 306px;
+    margin: 0;
+    margin-right: 142px;
+}
+
+.btn2, .btn3, .btn4 {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+    padding: 12px 40px;
+    margin: 0;
+    margin-right: 38px;
+    width: 161px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: none;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover {
+    opacity: 0.75;
+}
+
+.services {
+    width: 1222px;
+    margin: 90px 109px 121px 108px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-service,
+.second-service,
+.forth-service,
+.fifth-service {
+    margin: 0;
+    margin-right: 116px;
+    margin-bottom: 55px;
+}
+
+.third-service,
+.sixth-service {
+    margin-bottom: 55px;
+}
+
+.services img {
+    width: 329px;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
+    vertical-align: bottom;
+}
+
+.about-services  {
+    width: 330px;
+    height: 100px;
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.about-services h3 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.about-services p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+
+/* Price-container */
+.price-container {
+    max-width: 1222px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 40px 109px 115px 109px;
+}
+
+.prices {
+    max-width: 332px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 438px;
+}
+
+.prices h2 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.btnprices {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 34px 41px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+}
+
+.accourdion1,
+.accourdion2,
+.accourdion3 {
+    position:relative;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    background: #EDF2EC;
+    border-radius: 20px;
+    padding: 16px 110px 16px 40px;
+    border: none;
+    margin-bottom: 32px;
+    width: 250px;
+    height: 50px;
+    text-align: start;
+}
+
+.accourdion3:last-child {
+    margin: 0;
+}
+
+.accourdion1::after,
+.accourdion2::after,
+.accourdion3::after {
+    content: "";
+    position: absolute;
+    background-image: url(./Images/svg/accordion_btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    left: 210px;
+}
+
+.text-callus {
+    max-width: 452px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-end; */
+    align-items: end;
+    flex-direction: column;
+}
+
+.text-callus h2{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+.text-callus span {
+    color: rgba(73, 154, 24, 1);
+}
+
+.btn5 {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+    padding: 12px 30px;
+    margin: 0;
+    margin-bottom: 39px;
+    width: 162px;
+    height: 50px;
+    text-align: center;
+    background: none;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    align-items: end;
+}
+
+.btn5:hover {
+    opacity: 0.75;
+}
+
+.text-callus img {
+    width: 152px;
+    height: 175px;
+}
+
+/* Contact us container */
+.contacts-container {
+    background: #EDF2EC;
+    display: flex;
+    
+}
+
+
+.contactsus-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 53px 109px 0 109px;
+    width: 1222px;
+
+
+}
+
+.contactsus-container img {
+    width: 400px;
+    height: 497px;
+    /* margin-right: 113px; */
+}
+
+.contactsus-container h2{
+    /* font-family: 'Inika';
+    font-style: normal; */
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin: 0;
+    /* margin-right: 64px; */
+}
+
+.accourdion4 {
+    border-style: none;
+    position: relative;
+    width: 450px;
+    height: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    text-align: start;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    margin: 0;
+    padding: 5px 35px 5px 20px;
+}
+
+.accourdion4::after {
+    content: "";
+    position: absolute;
+    background-image: url(./Images/svg/accordion_btn_contacts.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* padding: 0; */
+    /* padding: 17px 39px 17px 339px; */
+    width: 18px;
+    height: 18px;
+    left: 399px;
+    top: 16px;
+}
+
+
+/* footer */
+.footer-container {
+    width: 1222px;
+    height: 50px;
+    margin: 40px 109px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    /* margin-left: 20px; */
+    width: 182px;
+}
+
+.left div {
+    font-family: 'Inter';
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.center {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 211px;
+}
+
+.center div {
+    font-family: 'Inter';
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.right {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 188px;
+}
+
+.left a,
+ .center a{
+    text-decoration: none;
+    color: #000000;
+}
+
+footer a:hover {
+    color: #E06733;
+}
+
+.instagramsvg,
+.facebooksvg,
+.twittersvg,
+.pinterestsvg {
+    fill: black;
+}
+
+.instagramsvg:hover,
+.facebooksvg:hover,
+.twittersvg:hover,
+.pinterestsvg:hover {
+    fill: #E06733;
+}
+/* End main css */
