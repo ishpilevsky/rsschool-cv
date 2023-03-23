@@ -16,7 +16,7 @@ body {
     padding: 0;
     min-width: 320px;
     min-height: 100vh;
-    max-width: 1444px;
+    max-width: 1440px;
 }
 
 button {
@@ -28,17 +28,12 @@ button {
     background-color: #EDF2EC;
 }
 
-.header-container {
-    margin: auto;
-}
-
 .header-wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    max-width: 1220px;
-    padding: 42px 0 42px 0;
+    padding: 42px 111px;
 }
 
 ul {
@@ -174,10 +169,10 @@ ul {
 
 .about-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    width: 1222px;
+    /* width: 1222px; */
     margin: 93px 109px;
 }
 
@@ -190,7 +185,7 @@ ul {
 .text-about {
     display: flex;
     flex-wrap: wrap;
-    max-width: 605px;
+    /* max-width: 605px; */
 }
 
 .third {
@@ -227,7 +222,7 @@ ul {
 }
 
 .services-container {
-    max-width: 1007px;
+    /* max-width: 1007px; */
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -272,8 +267,8 @@ ul {
 }
 
 .services {
-    width: 1222px;
-    margin: 90px 109px 121px 108px;
+    /* width: 1222px; */
+    margin: 0px 109px 121px 108px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -335,18 +330,23 @@ ul {
 
 
 /* Price-container */
+.section-price {
+    display: flex;
+    margin: 0;
+}
+
 .price-container {
-    max-width: 1222px;
+    /* max-width: 1222px; */
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     align-content: center;
     margin: 40px 109px 115px 109px;
 }
 
 .prices {
-    max-width: 332px;
+    /* max-width: 332px; */
     display: flex;
     flex-wrap: wrap;
     margin-right: 438px;
@@ -370,6 +370,8 @@ ul {
     padding: 34px 41px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
+    height: 282px;
+    width: 332px;
 }
 
 .accourdion1,
@@ -383,12 +385,13 @@ ul {
     color: #000000;
     background: #EDF2EC;
     border-radius: 20px;
-    padding: 16px 110px 16px 40px;
+    padding: 16px 54px 16px 40px;
     border: none;
     margin-bottom: 32px;
     width: 250px;
     height: 50px;
     text-align: start;
+    margin-right: 0;
 }
 
 .accourdion3:last-child {
@@ -410,10 +413,10 @@ ul {
 }
 
 .text-callus {
-    max-width: 452px;
+    /* max-width: 452px; */
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: flex-end; */
+    justify-content: flex-end;
     align-items: end;
     flex-direction: column;
 }
@@ -465,24 +468,20 @@ ul {
 .contacts-container {
     background: #EDF2EC;
     display: flex;
-    
 }
 
-
 .contactsus-container {
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-content: center;
-    margin: 53px 109px 0 109px;
-    width: 1222px;
-
-
+    margin: 53px 109px 0;
 }
 
 .contactsus-container img {
     width: 400px;
-    height: 497px;
+    height: 496px;
     /* margin-right: 113px; */
 }
 
@@ -494,7 +493,12 @@ ul {
     line-height: 52px;
     color: #499A18;
     margin: 0;
-    /* margin-right: 64px; */
+    margin-top: 26px;
+    /* margin-right: 89px; */
+}
+
+.btncontacts {
+    margin-top: 77px;
 }
 
 .accourdion4 {
@@ -534,8 +538,8 @@ ul {
 
 /* footer */
 .footer-container {
-    width: 1222px;
-    height: 50px;
+    /* width: 1222px; */
+    /* height: 50px; */
     margin: 40px 109px;
     display: flex;
     flex-wrap: nowrap;
@@ -596,6 +600,10 @@ footer a:hover {
     color: #E06733;
 }
 
+.twittersvg {
+    margin-top: 7px;
+}
+
 .instagramsvg,
 .facebooksvg,
 .twittersvg,
@@ -610,3 +618,188 @@ footer a:hover {
     fill: #E06733;
 }
 /* End main css */
+
+/* Adaptive  */
+@media (max-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+/* header */
+    .header-link img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .header-wrapper {
+        padding: 35px 50px;
+        margin: 0;
+
+    }
+
+    /* main */
+
+    .leaf-home {
+        width: 280px;
+        height: 254px;
+        margin-right: 0;
+        margin-left: 42px;
+    }
+
+    .home-container{
+        flex-direction: row-reverse;
+        margin: 40px 50px 70px 50px;
+    }
+
+    .text-home {
+        max-width: 346px;
+    }
+
+    .first {
+        font-size: 35px;
+    }
+
+    .second {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    /* section-about */
+    .about-container {
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+    }
+
+    .houseplant {
+        width: 250px;
+        height: 258px;
+        margin: 0px 259px 95px;
+    }
+
+    .text-about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 40px 50px;
+    }
+
+    .third {
+        text-align: center;
+        font-size: 35px;
+        line-height: 46px;  
+    }
+
+    /* section-service */
+    .services-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 60px 159px 40px 50px;
+    }
+
+    .fifth {
+        font-size: 35px;
+        line-height: 46px;
+        margin-bottom: 40px;
+    }
+
+    .btn4:last-child {
+        margin-right: 0;
+    }
+
+    .services {
+        margin: 40px 50px 70px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .first-service,
+    .third-service,
+    .fifth-service {
+        margin-right: 106px;
+        margin-bottom: 38px;
+    }
+
+    .second-service,
+    .forth-service,
+    .sixth-service {
+        margin-right: 0;
+        margin-bottom: 38px;
+    }
+
+    .services img {
+        width: 280px;
+    }
+
+    .about-services {
+        width: 280px;
+    }
+
+    .about-services p {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 40px 20px;
+    }
+
+    /* section-price */
+    .price-container {
+        margin: 40px 50px 88px;
+    }
+
+    .prices {
+        justify-items: flex-start;
+        flex-direction: column;
+        margin-right: 40px;
+        
+    }
+
+    .prices h2 {
+        font-size: 35px;
+        line-height: 42px;
+        margin-bottom: 50px;
+    }
+
+    .text-callus {
+        margin-top: 90px;
+    }
+
+    .text-callus h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    /* section-contact */
+    .contactsus-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 40px 159px 0;
+    }
+
+    .contactsus-container h2 {
+        order: 1;
+        margin-bottom: 100px;
+    }
+
+    .contactsus-container img {
+        width: 200px;
+        height: 249px;
+    }
+
+    .accourdion4 {
+        margin-bottom: 250px;
+    }
+    
+    /* section-footer */
+    .footer-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media (max-width: 380px) {
+
+}
