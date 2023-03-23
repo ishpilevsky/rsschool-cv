@@ -257,6 +257,10 @@ ul {
     border-radius: 5px;
 }
 
+.btn3 {
+    padding: 12px 54px;
+}
+
 .btn1:hover,
 .btn2:hover,
 .btn3:hover,
