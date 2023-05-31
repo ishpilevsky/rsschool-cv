@@ -23,22 +23,33 @@ button {
     cursor: pointer;
 }
 
+.containerr {
+    max-width: 1222px;
+    width: 100%;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 /* Start Header css */
-.header {
+.header-container {
     background-color: #EDF2EC;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-wrapper {
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 42px 111px;
+    margin: 42px auto;
+    width: 1220px;
 }
 
 ul {
@@ -104,19 +115,22 @@ ul {
     background-color: #EDF2EC;
 }
 
-.leaf-home {
-    width: 449px;
-    height: 412px;
-    margin-right: 224px;
-}
 
 .home-container {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    margin: 62px 109px 62px 109px;
+    margin: 62px auto;
+}
+
+.home-container img {
+    width: 50%;
+    height: auto;
+    max-width: 449px;
+    object-fit: cover;
 }
 
 .text-home {
@@ -124,6 +138,7 @@ ul {
     flex-wrap: wrap;
     max-width: 550px;
 }
+
 
 .first {
     font-family: 'Inter';
@@ -150,7 +165,20 @@ ul {
     margin-bottom: 62px;
 }
 
+.btnforsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .btn1 {
+    background: none;
+    border: 2px solid rgba(224, 103, 51, 1);
+    border-radius: 10px;
+    padding: 14px 26px;
+}
+
+.btn1 span {
     text-transform: uppercase;
     font-family: 'Inter';
     font-weight: 400;
@@ -158,37 +186,43 @@ ul {
     line-height: 20px;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-rendering: auto;
+    text-align: start;
     color: #000000;
-    background: none;
-    border: 2px solid rgba(224, 103, 51, 1);
-    border-radius: 10px;
-    padding: 14px 28px;
 }
 
 /* section-about */
 
 .section-about {
     background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    margin: 93px 109px;
+    margin: 93px auto;
 }
 
-.houseplant {
-    width: 464px;
-    height: 479px;
-    margin-left: 153px;
+.about-container img {
+    width: 40%;
+    height: auto;
+    max-width: 464px;
+    object-fit: cover;
+    object-position: bottom;
 }
+
 
 .text-about {
     display: flex;
     flex-wrap: wrap;
+    max-width: 605px;
 }
 
 .third {
@@ -198,7 +232,6 @@ ul {
     color: rgba(73, 154, 24, 1);
     margin: 0;
     margin-bottom: 40px;
-    max-width: 463px;
 }
 
 .third span {
@@ -215,23 +248,27 @@ ul {
 }
 
 /* service-section */
-.service-container {
+.section-service {
+    display: flex;
+    justify-content: center;
     background-color: rgba(237, 242, 236, 1);
+}
+
+.service-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
 }
 
 .services-container {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    margin: 40px 324px 90px 109px;
+    justify-content: space-between;
+    margin: 40px 0 90px;
+    align-items: flex-start;
 }
 
 .fifth {
+    display: flex;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
@@ -240,6 +277,12 @@ ul {
     margin: 0;
     margin-right: 142px;
 }
+
+.service-button {
+    display: flex;
+    margin-top: 29px;
+}
+
 
 .btn2,
 .btn3,
@@ -251,14 +294,8 @@ ul {
     line-height: 26px;
     color: #E06733;
     padding: 12px 40px;
-    margin: 0;
     margin-right: 38px;
-    width: 161px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background: none;
+    background: transparent;
     border: 1px solid #E06733;
     border-radius: 5px;
 }
@@ -275,7 +312,6 @@ ul {
 }
 
 .services {
-    /* margin: 0px 109px 121px 108px; */
     margin: auto;
     padding: 0;
     display: flex;
@@ -340,22 +376,25 @@ ul {
 /* Price-container */
 .section-price {
     display: flex;
-    margin: 0;
+    margin: auto;
+    justify-content: center;
 }
 
 .price-container {
     display: flex;
-    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    margin: 40px 109px 115px 109px;
-    max-width: 100%;
+    align-items: center;
+    margin: 40px 0 129px 0;
+    max-width: 1222px;
+    width: 100%;
 }
 
 .prices {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 438px;
+    flex-direction: column;
 }
 
 .prices h2 {
@@ -376,8 +415,8 @@ ul {
     padding: 34px 41px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
-    height: 282px;
-    width: 332px;
+    max-width: 332px;
+    width: 100%;
 }
 
 .accourdion1,
@@ -404,9 +443,9 @@ ul {
     margin: 0;
 }
 
-.accourdion1::after,
-.accourdion2::after,
-.accourdion3::after {
+.accourdion1::before,
+.accourdion2::before,
+.accourdion3::before {
     content: "";
     position: absolute;
     background-image: url(./Images/svg/accordion_btn.svg);
@@ -415,7 +454,7 @@ ul {
     padding: 0;
     width: 18px;
     height: 18px;
-    left: 210px;
+    right: 40px;
 }
 
 .text-callus {
@@ -435,6 +474,8 @@ ul {
     color: #000000;
     margin: 0;
     margin-bottom: 38px;
+    max-width: 452px;
+    width: 100%;
 }
 
 .text-callus span {
@@ -470,10 +511,14 @@ ul {
 }
 
 /* Contact us container */
-.contacts-container {
+.section-contacts {
     background: #EDF2EC;
     display: flex;
     justify-content: center;
+}
+
+.contacts-container {
+    display: flex;
 }
 
 .contactsus-container {
@@ -482,12 +527,12 @@ ul {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-content: center;
-    margin: 53px 109px 0;
+    margin-top: 53px;
 }
 
 .contactsus-container img {
-    width: 400px;
-    height: 496px;
+    max-width: 400px;
+    width: 100%;
 }
 
 .contactsus-container h2 {
@@ -501,12 +546,14 @@ ul {
 
 .btncontacts {
     margin-top: 77px;
+    max-width: 450px;
+    width: 100%;
 }
 
 .accourdion4 {
     border-style: none;
     position: relative;
-    width: 450px;
+    width: 100%;
     height: 50px;
     font-family: 'Inter';
     font-style: normal;
@@ -523,7 +570,7 @@ ul {
     padding: 5px 35px 5px 20px;
 }
 
-.accourdion4::after {
+.accourdion4::before {
     content: "";
     position: absolute;
     background-image: url(./Images/svg/accordion_btn_contacts.svg);
@@ -531,14 +578,16 @@ ul {
     background-position: center;
     width: 18px;
     height: 18px;
-    left: 399px;
+    right: 34px;
     top: 16px;
 }
 
 
 /* footer */
 .footer-container {
-    margin: 40px 109px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -616,9 +665,9 @@ footer a:hover {
 /* End main css */
 
 /* Adaptive  */
-@media screen and (max-width: 768px) {
-    body {
-        max-width: 100%;
+@media screen and (min-width: 768px) and (max-width: 1220px) {
+    .containerr {
+        max-width: 668px;
     }
 
     /* header */
@@ -634,17 +683,16 @@ footer a:hover {
     }
 
     /* main */
-
-    .leaf-home {
-        width: 280px;
-        height: 254px;
-        margin-right: 0;
-        margin-left: 42px;
-    }
-
     .home-container {
         flex-direction: row-reverse;
-        margin: 40px 50px 70px 50px;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+
+    .home-container img {
+        max-width: 280px;
+        margin: 0;
     }
 
     .text-home {
@@ -664,21 +712,22 @@ footer a:hover {
     /* section-about */
     .about-container {
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
         margin: 0;
     }
 
-    .houseplant {
-        width: 250px;
-        height: 258px;
-        margin: 0px 259px 95px;
+    .about-container img {
+        max-width: 250px;
+        margin: auto;
+        margin-bottom: 95px;
     }
 
     .text-about {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        margin: 40px 50px;
+        max-width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .third {
@@ -691,7 +740,8 @@ footer a:hover {
     .services-container {
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin: 60px 159px 40px 50px;
+        margin-top: 60px;
+        margin-bottom: 40px;
     }
 
     .fifth {
@@ -700,12 +750,15 @@ footer a:hover {
         margin-bottom: 40px;
     }
 
+    .service-button {
+        display: flex;
+    }
+
     .btn4:last-child {
         margin-right: 0;
     }
 
     .services {
-        margin: 40px 50px 70px;
         padding: 0;
         display: flex;
         flex-wrap: wrap;
@@ -743,24 +796,21 @@ footer a:hover {
 
     /* section-price */
     .price-container {
-        margin: 40px 50px 88px;
-    }
-
-    .prices {
-        justify-items: flex-start;
-        flex-direction: column;
-        margin-right: 40px;
-
+        margin-top: 40px;
+        margin-bottom: 88px;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .prices h2 {
         font-size: 35px;
         line-height: 42px;
         margin-bottom: 50px;
+        /* display: none; */
     }
 
     .text-callus {
-        margin-top: 90px;
+        max-width: 296px;
     }
 
     .text-callus h2 {
@@ -772,17 +822,23 @@ footer a:hover {
     .contactsus-container {
         flex-direction: column-reverse;
         align-items: center;
-        margin: 40px 159px 0;
+        margin: auto;
+        margin-top: 40px;
     }
 
     .contactsus-container h2 {
         order: 1;
+        margin: 0;
         margin-bottom: 100px;
     }
 
+    .btncontacts {
+        margin: 0;
+    }
+
     .contactsus-container img {
-        width: 200px;
-        height: 249px;
+        max-width: 200px;
+        width: 100%;
     }
 
     .accourdion4 {
@@ -797,9 +853,13 @@ footer a:hover {
     }
 }
 
-@media (max-width: 380px) {
+@media (min-width: 320px) and (max-width: 767px) {
     body {
         min-width: 320px;
+    }
+
+    .containerr {
+        width: 330px;
     }
 
     .menu-btn {
@@ -809,7 +869,6 @@ footer a:hover {
         height: 30px;
         position: relative;
         z-index: 2;
-        /* overflow: hidden; */
     }
 
     .menu-btn span {
@@ -852,8 +911,13 @@ footer a:hover {
         display: block;
     }
 
+    .header-wrapper {
+        justify-content: space-around;
+    }
+
+    /* home-container */
     .home-container {
-        margin: 25px;
+        margin: 24px auto;
     }
 
     .leaf-home {
@@ -868,6 +932,12 @@ footer a:hover {
         font-size: 25px;
         line-height: 25px;
         margin-bottom: 20px;
+    }
+
+    .about-container {
+        margin: 30px auto;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .second {
@@ -907,7 +977,17 @@ footer a:hover {
     }
 
     .services-container {
-        margin: 30px 103px 27px 25px;
+        margin-top: 30px;
+        margin-bottom: 38px;
+        flex-wrap: wrap;
+        width: 252px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .service-button {
+        flex-wrap: wrap;
+        margin: 0;
     }
 
     .fifth {
@@ -925,19 +1005,29 @@ footer a:hover {
         font-size: 15px;
         line-height: 20px;
         padding: 8px 28px;
-        width: auto;
-        height: auto;
+        width: 121px;
+        height: 35px;
         margin-right: 10px;
         margin-bottom: 9px;
     }
 
     .btn3 {
+        width: 45%;
         margin-right: 0;
+    }
+
+    .btn4 {
+        margin-right: 0;
+        margin-bottom: 0;
         width: 45%;
     }
 
     .services {
-        margin: 0 50px 27px 50px;
+        margin: 0;
+    }
+
+    .services img {
+        max-width: 279px;
     }
 
     .first-service,
@@ -946,21 +1036,28 @@ footer a:hover {
     .forth-service,
     .fifth-service,
     .sixth-service {
+        max-width: 280px;
         margin: auto;
         margin-bottom: 34px;
     }
 
     .sixth-service {
-        margin-bottom: 0;
+        margin-bottom: 27px;
     }
 
+    .about-services {
+        max-width: 279px;
+    }
+
+    /* price-conrainer */
     .price-container {
         margin: 0;
         flex-direction: column;
     }
 
     .prices {
-        margin: 25px 79px 19px 79px;
+        margin: 25px auto;
+        margin-bottom: 19px;
         justify-content: center;
     }
 
@@ -968,6 +1065,7 @@ footer a:hover {
         font-size: 25px;
         line-height: 30px;
         text-align: center;
+        margin-bottom: 40px;
     }
 
     .btnprices {
@@ -999,9 +1097,9 @@ footer a:hover {
     .text-callus {
         justify-content: center;
         align-items: center;
-        margin-top: 19px;
         margin-bottom: 14px;
-        margin: 19px 76px 14px;
+        margin: auto;
+        max-width: 230px;
     }
 
     .text-callus h2 {
@@ -1023,8 +1121,14 @@ footer a:hover {
         display: none;
     }
 
+
+    /* contacts-container */
     .contactsus-container {
-        margin: 25px 42px 0;
+        margin: 25px auto;
+        margin-bottom: 0;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column-reverse;
     }
 
     .contactsus-container h2 {
@@ -1032,15 +1136,19 @@ footer a:hover {
         line-height: 33px;
         text-align: center;
         margin: 0;
+        order: 1;
     }
 
     .contactsus-container img {
         width: 100px;
         height: 125px;
+        align-items: center;
     }
 
     .btncontacts {
-        margin: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
     }
 
     .accourdion4 {
@@ -1052,11 +1160,15 @@ footer a:hover {
         margin-bottom: 132px;
     }
 
-    .accourdion4::after {
-        left: 260px;
+    .accourdion4::before {
+        right: 25px;
     }
 
+
+    /* footer  */
     .footer-container {
-        margin: 22px 85px;
+        margin: 22px auto;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
